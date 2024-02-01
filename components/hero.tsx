@@ -8,9 +8,9 @@ const HeroPage = () => {
         initial={{ y: 0 }}
         animate={{ y: "-100%" }}
         transition={{ duration: 0.5, ease: "easeInOut", delay: 1.2 }}
-        className="w-screen h-screen bg-primary z-10 absolute flex justify-center items-center text-8xl text-secondary font-bold"
+        className="w-screen h-screen bg-primary z-10 absolute flex justify-center items-center text-6xl sm:text-8xl text-secondary font-bold"
       >
-        <MotionDiv initial={{ opacity: 0.2 }} animate={{ opacity: 1 }}>
+        <MotionDiv initial={{ opacity: 0.2 }} animate={{ opacity: 1 }} transition={{ duration: 0.5}}>
           PROMAX
         </MotionDiv>
       </MotionDiv>
