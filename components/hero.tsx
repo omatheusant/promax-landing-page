@@ -1,17 +1,19 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { MotionDiv } from "@/components/motion/motion-div";
 
 const HeroPage = () => {
   return (
     <>
-      <motion.div
+      <MotionDiv
         initial={{ y: 0 }}
         animate={{ y: "-100%" }}
-        transition={{ duration: 1.0, ease: "easeInOut" }}
-        className="w-screen h-screen bg-primary z-10 absolute"
-      />
+        transition={{ duration: 0.5, ease: "easeInOut", delay: 1.2 }}
+        className="w-screen h-screen bg-primary z-10 absolute flex justify-center items-center text-8xl text-secondary font-bold"
+      >
+        <MotionDiv initial={{ opacity: 0.2 }} animate={{ opacity: 1 }}>
+          PROMAX
+        </MotionDiv>
+      </MotionDiv>
       <div className="w-full">
         <div>
           <Image
